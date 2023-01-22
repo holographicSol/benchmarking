@@ -48,7 +48,7 @@ async def main(_chunks):
 
 
 if __name__ == '__main__':
-    print('\n[benchmarking]  -> [find most recent modified time + get file sizes] ..')
+    print('\n[benchmarking]  -> [find largest size] ..')
 
     print('')
     linear_synchronous_scan()
