@@ -78,16 +78,3 @@ if __name__ == '__main__':
     print('    [most recently modified]', datetime.datetime.fromtimestamp(max(mt)))
     print(f'    [file] {fp[idx_max_mt]}')
     print(f'    [multi-processed async time] {time.perf_counter() - t}')
-
-
-"""
-[linear synchronous benchmark]
-    [most recently modified] 2023-01-22 09:03:46.190344
-    [file] D:\Documents\Work\1. Projects\OMEGA_FIND_v2\.idea\workspace.xml
-    [linear synchronous time] 14.583340400000452
-
-[multi-processed async benchmark]
-    [most recently modified] 2023-01-22 09:03:46.190344
-    [file] D:\Documents\Work\1. Projects\OMEGA_FIND_v2\.idea\workspace.xml
-    [multi-processed async time] 10.41821250000794
-"""
